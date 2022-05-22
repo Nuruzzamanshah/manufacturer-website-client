@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Services from './pages/Services';
 import Login from './pages/Login';
+import Reviews from './pages/Reviews';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
-        <Route path='/services' element={<Services></Services>}></Route>
+        <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
       </Routes>
     </Navbar>

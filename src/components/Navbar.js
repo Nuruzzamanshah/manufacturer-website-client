@@ -18,7 +18,7 @@ const Navbar = ({children}) => {
                     <ul className="menu menu-horizontal gap-x-2">
                     <li><NavLink   to='/' className='rounded-lg'>Home</NavLink></li>
                     <li><NavLink   to='/about' className='rounded-lg'>About</NavLink></li>
-                    <li><NavLink   to='/services' className='rounded-lg'>Services</NavLink></li>
+                    <li><NavLink   to='/reviews' className='rounded-lg'>Reviews</NavLink></li>
                     <li><NavLink   to='/contact' className='rounded-lg'>Contact</NavLink></li>
                     <li><NavLink   to='/login' className='rounded-lg'>Login</NavLink></li>
                     <label  className="swap swap-rotate">
@@ -38,7 +38,7 @@ const Navbar = ({children}) => {
                 <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
                 <li><NavLink to='/'>Home</NavLink></li>
                 <li><NavLink to='/about'>About</NavLink></li>
-                <li><NavLink to='/services'>Services</NavLink></li>
+                <li><NavLink to='/reviews'>Reviews</NavLink></li>
                 <li><NavLink to='/contact'>Contact</NavLink></li>
                 <li><NavLink to='/login'>Login</NavLink></li>
                 </ul>
