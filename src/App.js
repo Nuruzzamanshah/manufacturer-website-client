@@ -7,13 +7,16 @@ import Login from './pages/Login';
 import Reviews from './pages/Reviews';
 import Purchase from './pages/Purchases';
 import SignUp from './pages/SignUp';
+import RequireAuth from './pages/RequireAuth';
 
 function App() {
   return (
     <Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/purchase' element={<Purchase></Purchase>}></Route>
+        <Route path='/purchase' element={<RequireAuth>
+          <Purchase></Purchase>
+        </RequireAuth>}></Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>

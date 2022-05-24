@@ -1,7 +1,14 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { NavLink } from 'react-router-dom';
+import auth from './../firebase.init';
 
 const Navbar = ({children}) => {
+    const [user, loading, error] = useAuthState(auth);
+    const logout = () => {
+        signOut(auth);
+      };
     return (
         <div className="drawer drawer-end">
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
@@ -20,7 +27,7 @@ const Navbar = ({children}) => {
                     <li><NavLink   to='/purchase' className='rounded-lg'>Purchase</NavLink></li>
                     <li><NavLink   to='/reviews' className='rounded-lg'>Reviews</NavLink></li>
                     <li><NavLink   to='/contact' className='rounded-lg'>Contact</NavLink></li>
-                    <li><NavLink   to='/login' className='rounded-lg'>Login</NavLink></li>
+                    <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <NavLink to='/login'>Login</NavLink>}</li>
                     <label  className="swap swap-rotate">
   
                     <input type="checkbox" data-toggle-theme="dark,light" />
@@ -40,7 +47,7 @@ const Navbar = ({children}) => {
                 <li><NavLink to='/purchase'>Purchase</NavLink></li>
                 <li><NavLink to='/reviews'>Reviews</NavLink></li>
                 <li><NavLink to='/contact'>Contact</NavLink></li>
-                <li><NavLink to='/login'>Login</NavLink></li>
+                <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <NavLink to='/login'>Login</NavLink>}</li>
                 </ul>
             </div>
         </div>
