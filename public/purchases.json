@@ -3,55 +3,55 @@
         "_id": 1,
         "picture": "https://i.ibb.co/f8rDbtd/purchase1.jpg",
         "name": "METRIC TOOL BITS",
-        "MinimusQuantity": 55
+        "minimusguantity": 190
     },
     {
         "_id": 2,
         "picture": "https://i.ibb.co/WnwDNL0/purchase2.jpg",
         "name": "SETS OF CHUCKING REAMERS",
-        "MinimusQuantity": 190
+        "minimusguantity": 210
     },
     {
         "_id": 3,
         "picture": "https://i.ibb.co/wLZPh4s/purchase3.jpg",
         "name": "DRIVE PIN PUNCHES",
-        "MinimusQuantity": 55
+        "minimusguantity": 101
     },
     {
         "_id": 4,
         "picture": " https://i.ibb.co/sJ6Chdx/purchase4.jpg",
         "name": "BORING HEAD",
-        "MinimusQuantity": 55
+        "minimusguantity": 290
     },
     {
         "_id": 5,
         "picture": "https://i.ibb.co/WcvrvSm/purchase5.jpg",
         "name": "THREADED SHANKS FOR BORING HEADS",
-        "MinimusQuantity": 55
+        "minimusguantity": 1000
     },
     {
         "_id": 6,
         "picture": "https://i.ibb.co/WDVXHBV/purchase6.jpg",
         "name": "DRILL SLEEVES",
-        "MinimusQuantity": 55
+        "minimusguantity": 90
     },
     {
         "_id": 7,
         "picture": " https://i.ibb.co/7SS11Yq/purchase7.jpg",
         "name": "TWIST DRILL GRINDING GAGE",
-        "MinimusQuantity": 55
+        "minimusguantity": 390
     },
     {
         "_id": 8,
         "picture": "https://i.ibb.co/Ms6K7Nb/purchase8.jpg",
         "name": "WIRE GAGE ROUND",
-        "MinimusQuantity": 55
+        "minimusguantity": 400
     },
     {
         "_id": 9,
         "picture": "https://i.ibb.co/fvjTKb3/purchase9.jpg",
         "name": "BORE GAGE INCH/MM",
-        "MinimusQuantity": 55
+        "minimusguantity": 500
     }
     
 ]

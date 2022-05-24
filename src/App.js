@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Reviews from './pages/Reviews';
-import Purchase from './pages/Purchase';
+import Purchase from './pages/Purchases';
 
 function App() {
   return (

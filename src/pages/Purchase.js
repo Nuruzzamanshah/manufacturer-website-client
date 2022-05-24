@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Purchase = ({purchase, setBooking}) => {
-    const {name,picture, MinimusQuantity} = purchase;
+const Purchase = ({items, setBooking}) => {
+    const {name,picture, minimusguantity} = items;
     return (
         <div className="card w-96 bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
@@ -11,15 +11,15 @@ const Purchase = ({purchase, setBooking}) => {
     <h2 className="card-title">{name}</h2>
     <p>
       {
-        MinimusQuantity.lenght > 0
-        ? <span>{MinimusQuantity[0]}</span>
+        minimusguantity.lenght > 0
+        ? <span>{minimusguantity[0]}</span>
         :<span></span>
 
       }
     </p>
-    <p>Minimus-Quantity:{MinimusQuantity}</p>
+    <p>Minimus-Quantity:{minimusguantity}</p>
     <div className="card-actions">
-      <label for="booking-modal" onClick={() => setBooking(purchase)} class="btn btn-primary">Buy Now</label>
+      <label for="booking-modal" onClick={() => setBooking(items)} class="btn btn-primary">Buy Now</label>
     </div>
   </div>
 </div>
