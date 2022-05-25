@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import auth from './../firebase.init';
 
 const Navbar = ({children}) => {
-    const [user, loading, error] = useAuthState(auth);
+    const [user] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
       };
@@ -20,13 +20,16 @@ const Navbar = ({children}) => {
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                     </label>
                 </div> 
-                
+
                 <div className="flex-none hidden lg:block">
                     <ul className="menu menu-horizontal gap-x-2">
                     <li><NavLink   to='/' className='rounded-lg'>Home</NavLink></li>
                     <li><NavLink   to='/purchase' className='rounded-lg'>Purchase</NavLink></li>
                     <li><NavLink   to='/reviews' className='rounded-lg'>Reviews</NavLink></li>
                     <li><NavLink   to='/contact' className='rounded-lg'>Contact</NavLink></li>
+                    {
+                        user && <li><NavLink   to='/dashboard' className='rounded-lg'>Dashboard</NavLink></li>
+                    }
                     <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <NavLink to='/login'>Login</NavLink>}</li>
                     <label  className="swap swap-rotate">
   
@@ -47,6 +50,9 @@ const Navbar = ({children}) => {
                 <li><NavLink to='/purchase'>Purchase</NavLink></li>
                 <li><NavLink to='/reviews'>Reviews</NavLink></li>
                 <li><NavLink to='/contact'>Contact</NavLink></li>
+                {
+                     user && <li><NavLink   to='/dashboard' className='rounded-lg'>Dashboard</NavLink></li>
+                }
                 <li>{user ? <button className="btn btn-ghost" onClick={logout}>SignOut</button> : <NavLink to='/login'>Login</NavLink>}</li>
                 </ul>
             </div>
