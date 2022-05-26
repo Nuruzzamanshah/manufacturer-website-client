@@ -4,7 +4,7 @@ import PurchaseBanner from './PurchaseBanner';
 const Purchases = () => {
     const [date, setDate] = useState(new Date());
     return (
-        <div className='text-primary  '>
+        <div className='text-primary'>
             <h1 className='my-10 text-center'>Quantity Purchase</h1>
              <PurchaseBanner date={date} setDate={setDate}></PurchaseBanner>
              <AvailablePurchases date={date}></AvailablePurchases>
