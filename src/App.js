@@ -19,6 +19,7 @@ import MyProfile from './pages/Dashboard/MyProfile';
 import Users from './pages/Dashboard/Users';
 import NotFound from './pages/NotFound/NotFound';
 import AddProduct from './pages/Dashboard/AddProduct';
+import ManageProduct from './pages/Dashboard/ManageProduct';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
           <Route path='users' element={<Users></Users>}></Route>
           <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
+          <Route path='manageProduct' element={<ManageProduct></ManageProduct>}></Route>
         </Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>
