@@ -8,6 +8,7 @@ const Navbar = ({children}) => {
     const [user] = useAuthState(auth);
     const logout = () => {
         signOut(auth);
+        localStorage.removeItem('accessToken');
       };
     return (
         <div className="drawer drawer-end">
