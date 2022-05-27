@@ -1,20 +1,39 @@
 import React from 'react';
-import {QueryClient, QueryClientProvider, useQuery } from 'react-query';
+import { useQuery } from 'react-query';
 import Loading from '../Loading';
+import UserRow from './UserRow';
 
 const Users = () => {
-    
-    const {data: users, isLoading} = useQuery('users', ()=> fetch('http://localhost:5000/user').then(res=>res.json()));
+    const {data: users, isLoading, refetch} = useQuery('users', ()=> fetch('http://localhost:5000/user', {
+        method:'GET'
+    }).then(res =>res.json()));
     if(isLoading){
         return <Loading></Loading>
-    }
-    const queryClient = new QueryClient();
-    if(queryClient){
-        return <QueryClientProvider client={queryClient} contextSharing={true}>{users.length}</QueryClientProvider>
     }
     return (
        <div>
             <h2 className='text-2xl'>All Users: {users.length}</h2>
+            <div class="overflow-x-auto">
+  <table class="table w-full">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Email</th>
+        <th>Admin</th>
+        <th>Remove Product</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+          users.map(user=><UserRow
+          key={user._id}
+          user={user}
+          refetch={refetch}
+          ></UserRow>)
+      }
+    </tbody>
+  </table>
+</div>
         </div>
         
     );

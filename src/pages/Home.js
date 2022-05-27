@@ -1,9 +1,10 @@
 import React from 'react';
 import Banner from './Banner';
 import Footer from './Footer';
+import Outdoors from './Outdoors';
 import Products from './Products';
-// import Purchases from './Purchases';
 import Services from './Services';
+import Tools from './Tools';
 
 const Home = () => {
     return (
@@ -11,7 +12,8 @@ const Home = () => {
             <Banner></Banner>
             <Services></Services>
             <Products></Products>
-            {/* <Purchases></Purchases> */}
+            <Tools></Tools>
+            <Outdoors></Outdoors>
             <Footer></Footer>
             
         </div>
