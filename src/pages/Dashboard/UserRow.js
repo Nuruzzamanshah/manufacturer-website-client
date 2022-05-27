@@ -10,12 +10,6 @@ const UserRow = ({user, refetch}) => {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
             }
         })
-    //     .then(res => res.json())
-    //     .then(data =>{
-    //         refetch();
-    //         toast.success(`Successfully Made an admin`);
-    //     })
-    // }
 
     .then(res => {
         if(res.status === 403){

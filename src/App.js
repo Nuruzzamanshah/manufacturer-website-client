@@ -18,6 +18,7 @@ import MyReview from './pages/Dashboard/MyReview';
 import MyProfile from './pages/Dashboard/MyProfile';
 import Users from './pages/Dashboard/Users';
 import NotFound from './pages/NotFound/NotFound';
+import AddProduct from './pages/Dashboard/AddProduct';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path='review' element={<MyReview></MyReview>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
           <Route path='users' element={<Users></Users>}></Route>
+          <Route path='addproduct' element={<AddProduct></AddProduct>}></Route>
         </Route>
         <Route path='/contact' element={<Contact></Contact>}></Route>
         <Route path='/reviews' element={<Reviews></Reviews>}></Route>

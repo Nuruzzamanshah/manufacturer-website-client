@@ -8,14 +8,14 @@ const Pservice = ({pservice , setPurchase}) => {
                 <h2 className="text-primary text-xl font-bold">{name}</h2>
                 <p>{picture}</p>
                 <p>{
-                    slots.length > 0
+                    slots?.length > 0
                     ? <span>{slots[0]}</span>
                     : <span className='text-red-500'>No Purchase Available. try another day</span>
                     }</p>
                 <p>{slots.length} {slots.length > 1 ? 'spaces' : 'space'}</p>
                 <div className="card-actions justify-center">
                 <label for="booking-modal"
-                disabled={slots.length=== 0} 
+                disabled={slots?.length=== 0} 
                 onClick={() => setPurchase(pservice)}
                  className="btn btn-sm btn-primary">Buy Now</label>
                 </div>
