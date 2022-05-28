@@ -3,6 +3,7 @@ import Banner from './Banner';
 import Footer from './Footer';
 import Outdoors from './Outdoors';
 import Products from './Products';
+import Question from './Question';
 import Services from './Services';
 import Summary from './Summary';
 import Tools from './Tools';
@@ -16,6 +17,7 @@ const Home = () => {
             <Tools></Tools>
             <Outdoors></Outdoors>
             <Summary></Summary>
+            <Question></Question>
             <Footer></Footer>
             
         </div>
