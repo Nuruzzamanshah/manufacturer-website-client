@@ -4,6 +4,7 @@ import Footer from './Footer';
 import Outdoors from './Outdoors';
 import Products from './Products';
 import Services from './Services';
+import Summary from './Summary';
 import Tools from './Tools';
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
             <Products></Products>
             <Tools></Tools>
             <Outdoors></Outdoors>
+            <Summary></Summary>
             <Footer></Footer>
             
         </div>
