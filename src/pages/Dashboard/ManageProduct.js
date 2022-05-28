@@ -4,7 +4,7 @@ import Loading from '../Loading';
 import ProductRow from './ProductRow';
 
 const ManageProduct = () => {
-    const {data: products, isLoading} = useQuery('products', () => fetch('http://localhost:5000/product',{
+    const {data: product, isLoading, refetch} = useQuery('product', () => fetch('http://localhost:5000/product',{
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }
@@ -14,7 +14,7 @@ const ManageProduct = () => {
     }
     return (
         <div>
-            <h2 className='text-2xl text-primary'>Manage Products:{products.length}</h2>
+            <h2 className='text-2xl text-primary'>Manage Products:{product.length}</h2>
             <div class="overflow-x-auto">
   <table class="table w-full">
     <thead>
@@ -28,10 +28,11 @@ const ManageProduct = () => {
     </thead>
     <tbody>
       {
-          products.map((product, index) =><ProductRow
-          key={product._id}
-          product={product}
+          product.map((products, index) =><ProductRow
+          key={products._id}
+          products={products}
           index={index}
+          refetch={refetch}
           ></ProductRow>)
       }
 
@@ -44,3 +45,4 @@ const ManageProduct = () => {
 };
 
 export default ManageProduct;
+
