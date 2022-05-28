@@ -8,7 +8,7 @@ const AvailablePurchases = ({date}) => {
     const [purchase, setPurchase] = useState(null);
 
     useEffect( () =>{
-        fetch('http://localhost:5000/purchase')
+        fetch('https://arcane-stream-26784.herokuapp.com/purchase')
         .then(res=> res.json())
         .then(data => setServices(data));
     },[])

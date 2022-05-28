@@ -10,7 +10,7 @@ const MyOrders = () => {
 
   useEffect( ()=>{
     if(user){
-      fetch(`http://localhost:5000/booking?userEmail=${user.email}`, {
+      fetch(`https://arcane-stream-26784.herokuapp.com/booking?userEmail=${user.email}`, {
         method: 'GET',
         headers:{
           'authorization': `Bearer ${localStorage.getItem('accessToken')}`

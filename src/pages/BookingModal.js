@@ -24,7 +24,7 @@ const BookingModal = ({date, purchase, setPurchase}) => {
           phone : event.target.phone.value
         }
 
-        fetch('http://localhost:5000/booking', {
+        fetch('https://arcane-stream-26784.herokuapp.com/booking', {
           method: 'POST',
           headers: {
             'content-type':'application/json'

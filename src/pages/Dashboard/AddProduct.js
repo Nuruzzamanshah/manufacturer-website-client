@@ -5,7 +5,7 @@ import Loading from './../Loading';
 import { toast } from 'react-toastify';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    const {data: services, isLoading} = useQuery('services', () => fetch('http://localhost:5000/purchase').then(res => res.json()))
+    const {data: services, isLoading} = useQuery('services', () => fetch('https://arcane-stream-26784.herokuapp.com/purchase').then(res => res.json()))
     
     const imageStoragekey = 'daa88ee479efe8fa9f286b47f14ff900';
 
@@ -29,7 +29,7 @@ const AddProduct = () => {
                     img: img
 
                 }
-                fetch('http://localhost:5000/product', {
+                fetch('https://arcane-stream-26784.herokuapp.com/product', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

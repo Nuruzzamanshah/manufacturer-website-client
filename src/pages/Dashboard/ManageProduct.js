@@ -4,7 +4,7 @@ import Loading from '../Loading';
 import ProductRow from './ProductRow';
 
 const ManageProduct = () => {
-    const {data: product, isLoading, refetch} = useQuery('product', () => fetch('http://localhost:5000/product',{
+    const {data: product, isLoading, refetch} = useQuery('product', () => fetch('https://arcane-stream-26784.herokuapp.com/product',{
         headers:{
             authorization: `Bearer ${localStorage.getItem('accessToken')}`
         }

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const ProductRow = ({products, index, refetch}) => {
     const {name ,product, img, email} = products;
     const handleDelete = email =>{
-      fetch(`http://localhost:5000/product/${email}`, {
+      fetch(`https://arcane-stream-26784.herokuapp.com/product/${email}`, {
         method: 'DELETE'
       })
       .then(res => res.json())
