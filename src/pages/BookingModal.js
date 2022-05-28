@@ -5,7 +5,7 @@ import {toast } from 'react-toastify';
 import { format } from 'date-fns';
 
 const BookingModal = ({date, purchase, setPurchase}) => {
-    const {_id, name, slots} = purchase;
+    const {_id, name, slots, price} = purchase;
     const [user] = useAuthState(auth);
     const formattedDate = format(date, 'pp');
     const handleBooking = event =>{
@@ -18,6 +18,7 @@ const BookingModal = ({date, purchase, setPurchase}) => {
           purchase:name,
           date: formattedDate,
           slot,
+          price,
           userEmail: user.email,
           userName : user.displayName,
           phone : event.target.phone.value

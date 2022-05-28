@@ -5,10 +5,7 @@ const ProductRow = ({products, index, refetch}) => {
     const {name ,product, img, email} = products;
     const handleDelete = email =>{
       fetch(`http://localhost:5000/product/${email}`, {
-        method: 'DELETE',
-        headers:{
-          authorization: `Bearer ${localStorage.getItem('accessToken')}`
-      }
+        method: 'DELETE'
       })
       .then(res => res.json())
       .then(data =>{
@@ -22,14 +19,14 @@ const ProductRow = ({products, index, refetch}) => {
     return (
         <tr>
         <th>{index +1}</th>
-        <td><div className="avatar">
-          <div className="w-16 rounded">
+        <td><div class="avatar">
+          <div class="w-16 rounded">
             <img src={img} alt="name" />
           </div>
         </div></td>
         <td>{name}</td>
         <td>{product}</td>
-        <td><button onClick={() => handleDelete(email)} className="btn btn-xs btn-error">Delete</button></td>
+        <td><button onClick={() => handleDelete(email)} class="btn btn-xs btn-error">Delete</button></td>
       </tr>
     );
 };

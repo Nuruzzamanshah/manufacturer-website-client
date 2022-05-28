@@ -3,6 +3,7 @@
     "_id": 1,
     "picture": "https://i.ibb.co/f8rDbtd/purchase1.jpg",
     "name": "METRIC TOOL BITS",
+    "price": 500,
     "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
@@ -26,6 +27,7 @@
     "_id": 2,
     "picture": "https://i.ibb.co/WnwDNL0/purchase2.jpg",
     "name": "SETS OF CHUCKING REAMERS",
+    "price": 690,
     "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
@@ -49,6 +51,7 @@
     "_id": 3,
     "picture": "https://i.ibb.co/wLZPh4s/purchase3.jpg",
     "name": "DRIVE PIN PUNCHES",
+    "price": 400,
     "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
@@ -72,6 +75,7 @@
     "_id": 4,
     "picture": " https://i.ibb.co/sJ6Chdx/purchase4.jpg",
     "name": "BORING HEAD",
+    "price": 590,
     "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
@@ -95,6 +99,7 @@
     "_id": 5,
     "picture": "https://i.ibb.co/WcvrvSm/purchase5.jpg",
     "name": "THREADED SHANKS FOR BORING HEADS",
+    "price": 5700,
     "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
@@ -118,6 +123,7 @@
     "_id": 6,
     "picture": "https://i.ibb.co/WDVXHBV/purchase6.jpg",
     "name": "DRILL SLEEVES",
+    "price": 270,
     "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
