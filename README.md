@@ -1,5 +1,15 @@
 # live site link : https://oak-tools-787e4.web.app
 
+##First a home page was created There are different routes Setup
+##Then made a banner
+##Various contents have been added to the homepage
+##navbar Contact list created
+##Login page created
+##Dashboard created
+##Not found page create
+##Various contents have been added to the dashboard 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
